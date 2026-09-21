@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useLanguage } from "../hooks/useLanguage.jsx";
 import NewsCard from "../components/NewsCard.jsx";
 import CourseCard from "../components/CourseCard.jsx";
@@ -14,6 +14,8 @@ import { TESTIMONIALS } from "../data/testimonials.js";
 
 export default function Home() {
   const { t, lang } = useLanguage();
+  const { category } = useParams();
+  const activeCategory = category || "all";
 
   const heroTitleHtml =
     lang === "ar"
@@ -26,7 +28,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="hero">
+      <section className="hero" id="home">
         <div className="container">
           <div className="hero-content">
             <div className="hero-badge">
@@ -160,14 +162,17 @@ export default function Home() {
               <Link
                 key={f.id}
                 to={f.id === "all" ? "/courses" : `/courses/${f.id}`}
-                className={`tab-btn${f.id === "all" ? " active" : ""}`}
+                className={`tab-btn${activeCategory === f.id ? " active" : ""}`}
               >
                 {f.label}
               </Link>
             ))}
           </div>
           <div className="card-grid">
-            {COURSES.filter((c) => c.category !== "support").map((c) => (
+            {COURSES.filter((c) => {
+              if (activeCategory === "all") return c.category !== "support";
+              return c.category === activeCategory;
+            }).map((c) => (
               <CourseCard key={c.slug} course={c} />
             ))}
           </div>
@@ -204,7 +209,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="card-grid" style={{ marginTop: "1.75rem" }}>
+          <div
+            className="card-grid"
+            id="sessions-grid"
+            style={{ marginTop: "1.75rem", scrollMarginTop: "80px" }}
+          >
             {SESSIONS.map((s) => (
               <SessionCard key={s.slug} session={s} />
             ))}
@@ -224,6 +233,89 @@ export default function Home() {
             {TESTIMONIALS[lang].map((item, i) => (
               <TestimonialCard key={i} item={item} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* REGISTRATION */}
+      <section id="registration" className="section-alt">
+        <div className="container">
+          <div className="section-head center">
+            <span className="section-kicker">{t.regKicker}</span>
+            <h2>{t.regTitle}</h2>
+            <p>{t.regLead}</p>
+          </div>
+          <div className="reg-panel">
+            <ul className="reg-list">
+              {t.regDocs.map((d, i) => (
+                <li key={i}>
+                  <span>{d}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="reg-fee">{t.regFee}</div>
+            <a
+              className="btn btn-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://wa.me/213795777126?text=${encodeURIComponent(
+                t.waMsgRegistration
+              )}`}
+            >
+              {t.regCta}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact">
+        <div className="container">
+          <div className="section-head center">
+            <span className="section-kicker">{t.contactKicker}</span>
+            <h2>{t.contactTitle}</h2>
+            <p>{t.contactLead}</p>
+          </div>
+          <div className="contact-simple">
+            <a className="contact-card" href="tel:+213795777126">
+              <span className="ic phone">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </span>
+              <b>{t.contactPhoneL}</b>
+              <span className="value">0795 77 71 26</span>
+            </a>
+            <a
+              className="contact-card"
+              href="https://www.instagram.com/academie_el_takwa_blida/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="ic instagram">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </span>
+              <b>{t.contactInstaL}</b>
+              <span className="value">academie_el_takwa_blida</span>
+            </a>
           </div>
         </div>
       </section>
