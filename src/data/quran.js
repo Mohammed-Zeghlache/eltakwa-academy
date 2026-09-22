@@ -130,27 +130,35 @@ export const QURAN_ITEMS = [
       en: ["A simplified teaching method for children", "An encouraging atmosphere for memorization"],
     },
   },
-  {
-    slug: "quran-annual-ceremony",
+   {
+    slug: "quran-umrah-raffle",
     type: "quran",
     infoOnly: true,
-    title: { ar: "الحفل السنوي واحتفال الخاتمات", en: "Annual Ceremony for Quran Graduates" },
-    duration: { ar: "كل شهر ديسمبر", en: "Every December" },
+    title: {
+      ar: "اختمي القرآن الكريم في عام... وادخلي قرعة العمرة!",
+      en: "Finish the Quran in One Year... and Enter the Umrah Raffle!",
+    },
+    duration: {
+      ar: "ختمة كاملة في عام واحد",
+      en: "A full Quran completion in one year",
+    },
     price: "",
     desc: {
-      ar: "تقيم الأكاديمية سنويًا حفلًا خاصًا بخاتمات كتاب الله، بحضور طالبات من مختلف الولايات، حضوريًا وعن بُعد، احتفاءً بإنجازهن.",
-      en: "The academy holds an annual ceremony honoring students who complete the Quran, with attendees joining from different provinces, in person and remotely.",
+      ar: "في أكاديمية التقوى لتحفيظ القرآن الكريم، نجعل رحلة الختمة أكثر تحفيزًا وبركة. لكل طالبة تُتِمّ ختم القرآن الكريم في عام واحد وفق البرنامج والمتابعة المعتمدة من الأكاديمية، فرصة مميزة للدخول في قرعة للفوز بعمرة.",
+      en: "At Taqwa Academy, we make the journey of completing the Quran more motivating and blessed. Every student who completes the Quran within one year, following the academy's approved program and follow-up, has a special chance to enter the Umrah raffle.",
     },
     points: {
       ar: [
-        "تكريم الخاتمات ومنحهن شهادات حفظ القرآن الكريم",
-        "قراءات إيمانية وخاتمة جماعية",
-        "قرعة العمرة السنوية بين كل من أتممت الختمة مع الأكاديمية",
+        "الشرط: إتمام ختم القرآن الكريم في عام واحد وفق البرنامج والمتابعة المعتمدة من الأكاديمية",
+        "الجائزة: رحلة عمرة كاملة، ويتم الفوز عن طريق القرعة بين المستحقات اللاتي أتممن الختمة",
+        "خطواتكِ نحو الختمة: احفظي، ثبّتي، راجعي، وواصلي حتى الختمة بإذن الله",
+        "اجعلي هذا العام عام القرآن... ولعلّها تكون رحلة إلى بيت الله الحرام",
       ],
       en: [
-        "Honoring graduates and awarding Quran memorization certificates",
-        "Faith-based recitations and a group closing ceremony",
-        "An annual Umrah raffle among all students who complete the Quran with the academy",
+        "Requirement: complete the Quran within one year according to the academy's approved program and follow-up",
+        "Prize: a full Umrah trip, awarded by raffle among eligible students who completed the Quran",
+        "Your steps toward completion: memorize, reinforce, review, and continue until the completion, God willing",
+        "Make this year the year of the Quran... and it may become a journey to the Sacred House of Allah",
       ],
     },
   },
