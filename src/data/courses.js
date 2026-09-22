@@ -162,6 +162,48 @@ export const COURSES = [
   },
 
   /* ---------- HUMAN DEVELOPMENT / MARKETING ---------- */
+    {
+    slug: "my-mother-my-paradise",
+    type: "course",
+    category: "development",
+    title: { ar: "مشروع أمي جنتي — الدفعة 12", en: "My Mother, My Paradise — Batch 12" },
+    duration: { ar: "أونلاين عبر تلغرام", en: "Online via Telegram" },
+    price: "1,950 دج",
+    desc: {
+      ar: "مشروع تربوي متكامل لكل أم تريد استغلال السنوات الأولى من عمر أطفالها، وتعلّم أهم مناهج التعليم المبكر لتنمية قدراتهم الفكرية والبدنية والشخصية. مناسب لكل أم، ولي، مربية أطفال، أرطفونية، وأخصائي.",
+      en: "A complete educational project for every mother who wants to make the most of her children's early years and learn the best early-education methods to develop their intellectual, physical, and personal abilities. Suitable for mothers, guardians, kindergarten educators, speech therapists, and specialists.",
+    },
+    points: {
+      ar: [
+        "ورشات تدريبية للأمهات والأطفال",
+        "التشافي من صدمات الماضي للأمهات من أجل تربية سليمة",
+        "توجيه الأمهات لكيفية تدريس الأطفال",
+        "صعوبات التعلم لدى الأطفال وعلاج السلوكيات",
+        "حصص تعليمية لعقيدة الطفل",
+        "الحد من غيرة الأطفال",
+        "طرق التعامل مع مختلف أنماط الأطفال",
+        "فن التعامل مع الطفل والمراهق وتربية الأبناء",
+        "التدريب بمنهج المونتيسوري",
+        "التدريب بمنهج الجلين دومان",
+        "هدية: شهادة مشاركة إلكترونية بختم المدربة قابلة للطباعة",
+        "هدية: مخيم إلكتروني لتعليم أطفالكم مبادئ ديننا",
+      ],
+      en: [
+        "Training workshops for mothers and children",
+        "Healing from past traumas for mothers, for sound parenting",
+        "Guiding mothers on how to teach children",
+        "Learning difficulties in children and behavioral treatment",
+        "Educational sessions on the child's creed",
+        "Reducing jealousy among children",
+        "Ways to deal with different child personalities",
+        "The art of dealing with children and teenagers",
+        "Montessori method training",
+        "Glenn Doman method training",
+        "Gift: electronic participation certificate with the trainer's stamp, printable",
+        "Gift: electronic camp to teach your children the principles of our religion",
+      ],
+    },
+  },
   {
     slug: "human-development",
     type: "course",
