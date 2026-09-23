@@ -161,6 +161,11 @@ export const COURSES = [
     },
   },
 
+
+
+
+  
+
   /* ---------- HUMAN DEVELOPMENT / MARKETING ---------- */
     {
     slug: "my-mother-my-paradise",
@@ -237,37 +242,62 @@ export const COURSES = [
     },
   },
 
+
+
+
+
+  
   /* ---------- CRAFT COURSES ---------- */
   {
     slug: "hairdressing",
     type: "course",
     category: "craft",
     title: { ar: "دورة الحلاقة", en: "Hairdressing Course" },
-    duration: { ar: "3 أشهر", en: "3 months" },
-    price: "15,000 دج",
+    duration: { ar: "3 أشهر — كل سبت من 8:00 إلى 10:00 صباحًا", en: "3 months — Every Saturday, 8:00–10:00 AM" },
+    price: "17,000 دج",
     desc: {
-      ar: "تعلّمي أساسيات وتقنيات الحلاقة والتصفيف من الصفر حتى الاحتراف.",
-      en: "Learn hairdressing and styling techniques from the basics to a professional level.",
+      ar: "تعلّمي أساسيات وتقنيات الحلاقة والتصفيف من الصفر حتى الاحتراف. الحصص كل يوم سبت من الساعة 8:00 إلى 10:00 صباحًا.",
+      en: "Learn hairdressing and styling techniques from the basics to a professional level. Classes every Saturday from 8:00 to 10:00 AM.",
     },
     points: {
-      ar: ["أساسيات القص والتصفيف", "تقنيات الصبغ والعناية بالشعر", "التعامل مع مختلف أنواع الشعر"],
-      en: ["Cutting and styling basics", "Coloring techniques and hair care", "Working with different hair types"],
+      ar: [
+        "أساسيات القص والتصفيف",
+        "تقنيات الصبغ والعناية بالشعر",
+        "التعامل مع مختلف أنواع الشعر",
+        "الموعد: كل سبت من 8:00 إلى 10:00 صباحًا",
+      ],
+      en: [
+        "Cutting and styling basics",
+        "Coloring techniques and hair care",
+        "Working with different hair types",
+        "Schedule: every Saturday from 8:00 to 10:00 AM",
+      ],
     },
   },
-  {
-    slug: "cooking",
+    {
+    slug: "makeup-artist",
     type: "course",
     category: "craft",
-    title: { ar: "دورة الطبخ التقليدي والعصري", en: "Traditional & Modern Cooking Course" },
-    duration: { ar: "3 أشهر", en: "3 months" },
+    title: { ar: "دورة ماكياج أرتيست", en: "Makeup Artist Course" },
+    duration: { ar: "2 أشهر — كل سبت من 14:00 إلى 16:00", en: "2 months — Every Saturday, 2:00–4:00 PM" },
     price: "15,000 دج",
     desc: {
-      ar: "وصفات متنوعة وتقنيات طبخ تساعدكِ على التميّز في المطبخ أو بدء مشروع غذائي.",
-      en: "A variety of recipes and cooking techniques to excel at home or start a food business.",
+      ar: "تعلّمي فن الماكياج الاحترافي من الصفر حتى الاحتراف. الحصص كل يوم سبت من الساعة 14:00 إلى 16:00 بعد الزوال.",
+      en: "Learn the art of professional makeup from the basics to a professional level. Classes every Saturday from 2:00 to 4:00 PM.",
     },
     points: {
-      ar: ["أطباق يومية ومناسبات", "تنظيم المطبخ وتوفير الوقت", "أفكار لمشروع منزلي (طلبيات، توصيل)"],
-      en: ["Daily and occasion dishes", "Kitchen organization and time saving", "Ideas for a home food business"],
+      ar: [
+        "أساسيات الماكياج والعناية بالبشرة",
+        "تقنيات ماكياج المناسبات والسهرات",
+        "ماكياج العروس الاحترافي",
+        "الموعد: كل سبت من 14:00 إلى 16:00 بعد الزوال",
+      ],
+      en: [
+        "Makeup basics and skin care",
+        "Occasion and evening makeup techniques",
+        "Professional bridal makeup",
+        "Schedule: every Saturday from 2:00 to 4:00 PM",
+      ],
     },
   },
   {
@@ -415,6 +445,11 @@ export const COURSES = [
     },
   },
 
+
+
+
+
+  
   /* ---------- SUPPORT LESSONS ---------- */
   {
     slug: "support-arabic",
