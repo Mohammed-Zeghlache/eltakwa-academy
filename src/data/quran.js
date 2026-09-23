@@ -48,6 +48,35 @@ export const QURAN_ITEMS = [
       ],
     },
   },
+      {
+    slug: "quran-individual-whatsapp",
+    type: "quran",
+    title: { ar: "حلقات فردية لتحفيظ القرآن عبر الواتساب", en: "Individual Quran Memorization Circles via WhatsApp" },
+    duration: { ar: "حصتان في الأسبوع", en: "Two sessions per week" },
+    price: "4,500 دج",
+    desc: {
+      ar: "حلقات فردية لتحفيظ القرآن الكريم عبر تطبيق الواتساب، حصتان في الأسبوع، بمتابعة شخصية وتصحيح للتلاوة.",
+      en: "Individual Quran memorization circles via WhatsApp, two sessions per week, with personal follow-up and recitation correction.",
+    },
+    points: {
+      ar: [
+        "حصتان في الأسبوع",
+        "عبر تطبيق الواتساب",
+        "متابعة فردية شخصية",
+        "تصحيح التلاوة وتعليم الأحكام",
+        "مناسبة لمختلف المستويات",
+        "السعر: 4,500 دج",
+      ],
+      en: [
+        "Two sessions per week",
+        "Via the WhatsApp app",
+        "Personal one-on-one follow-up",
+        "Recitation correction and tajweed rules",
+        "Suitable for all levels",
+        "Price: 4,500 DZD",
+      ],
+    },
+  },
   {
     slug: "quran-refresh",
     type: "quran",
