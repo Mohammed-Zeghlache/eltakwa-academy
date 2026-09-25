@@ -37,7 +37,7 @@ export default function Footer() {
           <div>
             <h4>{t.footContactT}</h4>
             <ul>
-              <li>0795 77 71 26</li>
+              <li>05 50 13 43 37</li>
               <li>
                 <a href="https://www.instagram.com/academie_el_takwa_blida/" target="_blank" rel="noopener noreferrer">
                   @academie_el_takwa_blida
