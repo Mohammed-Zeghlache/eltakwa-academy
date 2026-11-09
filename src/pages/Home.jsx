@@ -180,7 +180,8 @@ export default function Home() {
       </section>
 
       {/* SESSIONS */}
-      <section id="sessions" className="section-alt">
+      
+      {/* <section id="sessions" className="section-alt">
         <div className="container">
           <div className="feature-panel">
             <div className="feature-content">
@@ -219,7 +220,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FEEDBACK */}
       <section id="feedback">
